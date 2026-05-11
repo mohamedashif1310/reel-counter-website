@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { DownloadIcon, AndroidIcon } from "./Icons";
 
-const FIREBASE_URL = process.env.NEXT_PUBLIC_FIREBASE_DOWNLOAD_URL || "#download";
+const DOWNLOAD_URL = process.env.NEXT_PUBLIC_FIREBASE_DOWNLOAD_URL || "/reel-counter.apk";
 
 export default function DownloadCTA() {
   const ref = useRef(null);
@@ -30,7 +30,7 @@ export default function DownloadCTA() {
         </p>
 
         <motion.a
-          href={FIREBASE_URL}
+          href={DOWNLOAD_URL}
           className="group inline-flex items-center gap-3 px-10 py-5 bg-white text-black rounded-full font-semibold text-lg transition-all duration-300 hover:shadow-[0_0_60px_rgba(255,255,255,0.15)] hover:scale-[1.03]"
           whileTap={{ scale: 0.97 }}
         >

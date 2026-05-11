@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { DownloadIcon, AndroidIcon } from "./Icons";
 
-const FIREBASE_URL = process.env.NEXT_PUBLIC_FIREBASE_DOWNLOAD_URL || "#download";
+const DOWNLOAD_URL = process.env.NEXT_PUBLIC_FIREBASE_DOWNLOAD_URL || "/reel-counter.apk";
 
 const headlineWords = ["Know", "Your", "Scroll."];
 
@@ -133,7 +133,7 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.9 }}
           >
-            <a href={FIREBASE_URL}
+            <a href={DOWNLOAD_URL}
               className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-black rounded-full font-semibold transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_40px_rgba(255,255,255,0.15)]">
               <DownloadIcon size={18} className="text-black" />
               <span>Download for Android</span>
