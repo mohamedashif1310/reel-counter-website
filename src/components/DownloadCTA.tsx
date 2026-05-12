@@ -40,6 +40,7 @@ export default function DownloadCTA() {
         </motion.a>
 
         <p className="text-[13px] text-white/20 mt-8">Android 9+ · ~8 MB · No in-app purchases</p>
+        <p className="text-[11px] text-white/15 mt-3 max-w-xs mx-auto">If Play Protect warns you, tap &quot;More details&quot; → &quot;Install anyway&quot;. The app is 100% safe and open-source.</p>
       </motion.div>
     </section>
   );
